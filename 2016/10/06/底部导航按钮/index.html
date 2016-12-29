@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="PS3,Games," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="description" content="关于焦点图轮播的实现关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/12/14/hello-world/index.html">
+<meta property="og:title" content="JS焦点图轮播">
+<meta property="og:url" content="http://yoursite.com/2016/10/06/底部导航按钮/index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta property="og:updated_time" content="2016-12-29T16:15:14.756Z">
+<meta property="og:description" content="关于焦点图轮播的实现关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。">
+<meta property="og:updated_time" content="2016-12-29T20:14:52.995Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="JS焦点图轮播">
+<meta name="twitter:description" content="关于焦点图轮播的实现关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。">
 
 
 
@@ -102,7 +102,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"left","display":"always"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/12/14/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/06/底部导航按钮/"/>
 
 
 
 
 
-  <title> Hello World | MyBlog </title>
+  <title> JS焦点图轮播 | MyBlog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -250,7 +250,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/14/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/06/底部导航按钮/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="邱隆辉">
@@ -274,7 +274,7 @@
             
             
               
-                Hello World
+                JS焦点图轮播
               
             
           </h1>
@@ -289,8 +289,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-14T23:35:25+08:00">
-                2016-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-06T23:16:03+08:00">
+                2016-10-06
               </time>
             
 
@@ -300,28 +300,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Diary/" itemprop="url" rel="index">
-                    <span itemprop="name">Diary</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -330,8 +308,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/12/14/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/14/hello-world/" itemprop="commentCount"></span>
+                <a href="/2016/10/06/底部导航按钮/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/06/底部导航按钮/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -357,15 +335,7 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="关于焦点图轮播的实现"><a href="#关于焦点图轮播的实现" class="headerlink" title="关于焦点图轮播的实现"></a>关于焦点图轮播的实现</h2><p>关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。<br><a id="more"></a><br>实现代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div></pre></td><td class="code"><pre><div class="line">	&lt;script&gt;</div><div class="line">	//箭头出现</div><div class="line">	var oplayDiv=document.getElementById(&quot;playimages&quot;);</div><div class="line">	var omarkL=oplayDiv.getElementsByClassName(&quot;mark_left&quot;)[0];</div><div class="line">	var omarkR=oplayDiv.getElementsByClassName(&quot;mark_right&quot;)[0];</div><div class="line">	var oprev=oplayDiv.getElementsByClassName(&quot;prev&quot;)[0];</div><div class="line">	var onext=oplayDiv.getElementsByClassName(&quot;next&quot;)[0];</div><div class="line">	var oSmallPicWrap=document.getElementsByClassName(&quot;small_picwrap&quot;)[0];</div><div class="line">	var oSmallPic=oSmallPicWrap.getElementsByClassName(&quot;small_pic&quot;)[0];</div><div class="line">	var aSmallLi=oSmallPic.getElementsByTagName(&quot;li&quot;);</div><div class="line">	var oBigUl=document.getElementsByClassName(&quot;big_pic&quot;)[0];</div><div class="line">	var aBigLi=oBigUl.getElementsByTagName(&quot;li&quot;);</div><div class="line">	var oBliWrap=document.getElementsByClassName(&quot;bli_wrap&quot;)[0];</div><div class="line">	var nowZindex=2;</div><div class="line">	var now=0;</div><div class="line">	//显示箭头</div><div class="line">	function displayFX(a,b)&#123;</div><div class="line">		a.onmouseover=b.onmouseover=function()&#123;</div><div class="line">			startMove(a,&#123;opacity:100&#125;)</div><div class="line">		&#125;</div><div class="line">		a.onmouseout=b.onmouseout=function()&#123;</div><div class="line">		startMove(a,&#123;opacity:0&#125;)</div><div class="line">		&#125;	</div><div class="line">	&#125;</div><div class="line">	displayFX(oprev,omarkL)</div><div class="line">	displayFX(onext,omarkR)</div><div class="line">	</div><div class="line">	//小图滚动</div><div class="line">	</div><div class="line">	oSmallPic.innerHTML+=oSmallPic.innerHTML</div><div class="line">	oSmallPic.style.width=aSmallLi[0].offsetWidth*aSmallLi.length+&quot;px&quot;;</div><div class="line">	var time1=setInterval(move,30);</div><div class="line">	function move()&#123;</div><div class="line">		if(oSmallPic.offsetLeft&lt;=-oSmallPic.offsetWidth/2)&#123;</div><div class="line">		oSmallPic.style.left=0;</div><div class="line">		&#125;</div><div class="line">		oSmallPic.style.left=oSmallPic.offsetLeft-2+&quot;px&quot;</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">	 oSmallPicWrap.onmouseover=function()&#123;</div><div class="line">		 clearInterval(time1)</div><div class="line">		 &#125;</div><div class="line">	 oSmallPicWrap.onmouseout=function()&#123;</div><div class="line">		time1=setInterval(move,30)</div><div class="line">		 &#125;		</div><div class="line">		</div><div class="line">	//大图切换</div><div class="line">	oBliWrap.innerHTML+=oBliWrap.innerHTML;</div><div class="line">	for(var i=0; i&lt;aSmallLi.length; i++)&#123;</div><div class="line">		aSmallLi[i].index=i;</div><div class="line">		 aSmallLi[i].onclick=function()&#123;</div><div class="line">			 aBigLi[this.index].style.zIndex=nowZindex++;</div><div class="line">			 if(this.index==now)&#123;</div><div class="line">				 return</div><div class="line">				 &#125;</div><div class="line">			 now=this.index//同一张图片只执行一次，除非切换过后；</div><div class="line">			 aBigLi[this.index].style.height=0;</div><div class="line">			 startMove(aBigLi[this.index],&#123;height:352&#125;)</div><div class="line">			 clearInterval(timer2);//点击小图后，自动下一张定时器清除。</div><div class="line">			 timer2=setInterval(next,6000)</div><div class="line">			 &#125;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">	//上一张与下一张</div><div class="line">	onext.onclick=function()&#123;</div><div class="line">		now++;</div><div class="line">		if(now&gt;aBigLi.length-1)&#123;</div><div class="line">			now=0;</div><div class="line">			&#125;</div><div class="line">		aBigLi[now].style.zIndex=nowZindex++;</div><div class="line">		aBigLi[now].style.height=0;</div><div class="line">		startMove(aBigLi[now],&#123;height:352&#125;)</div><div class="line">		clearInterval(timer2);//点击小图后，自动下一张定时器清除。</div><div class="line">		timer2=setInterval(next,6000)</div><div class="line">		&#125;	</div><div class="line">	oprev.onclick=function()&#123;</div><div class="line">		now--;</div><div class="line">		if(now&lt;0)&#123;</div><div class="line">			now=aBigLi.length-1;</div><div class="line">			&#125;</div><div class="line">		aBigLi[now].style.zIndex=nowZindex++;</div><div class="line">		aBigLi[now].style.height=0;</div><div class="line">		startMove(aBigLi[now],&#123;height:352&#125;)</div><div class="line">		clearInterval(timer2);//点击小图后，自动下一张定时器清除。</div><div class="line">		timer2=setInterval(next,6000)</div><div class="line">		&#125;</div><div class="line">	//自动下一张</div><div class="line">	function next()&#123;</div><div class="line">		now++;</div><div class="line">		if(now&gt;aBigLi.length-1)&#123;</div><div class="line">			now=0;</div><div class="line">			&#125;</div><div class="line">		aBigLi[now].style.zIndex=nowZindex++;</div><div class="line">		aBigLi[now].style.height=0;</div><div class="line">		startMove(aBigLi[now],&#123;height:352&#125;)</div><div class="line">		&#125;</div><div class="line">	var timer2=setInterval(next,6000)</div><div class="line">	</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -387,18 +357,14 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/PS3/" rel="tag"># PS3</a>
-          
-            <a href="/tags/Games/" rel="tag"># Games</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/28/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
           </div>
 
@@ -406,8 +372,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/29/底部导航按钮/" rel="prev" title="底部导航按钮">
-                底部导航按钮 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/10/20/zou/" rel="prev" title="向前走，不要停">
+                向前走，不要停 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -434,8 +400,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/14/hello-world/"
-           data-title="Hello World" data-url="http://yoursite.com/2016/12/14/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/10/06/底部导航按钮/"
+           data-title="JS焦点图轮播" data-url="http://yoursite.com/2016/10/06/底部导航按钮/">
       </div>
     
   </div>
@@ -482,7 +448,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -500,7 +466,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -578,7 +544,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于焦点图轮播的实现"><span class="nav-number">1.</span> <span class="nav-text">关于焦点图轮播的实现</span></a></li></ol></div>
             
 
           </div>
