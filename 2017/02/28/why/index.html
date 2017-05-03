@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="记录,转载," />
 
 
 
@@ -84,16 +84,22 @@
 
 
 
-<meta name="description" content="关于焦点图轮播的实现关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。">
+<meta name="description" content="为什么像百度、淘宝之类大公司网页不使用响应式技术？而是独立写移动系统？
+有细心的朋友会发现，在手机上打开淘宝和百度的网站，发现地址前面都有个“m”，例如:m.taobao.com, m.baidu.com。要是响应式技术像你说的那么神，为什么这些大公司不直接使用响应式技术构建网站？这样不是更省钱么？
+要回答这个问题，就要先给出结论，响应式设计并不是万能的。虽然，我们是响应式的铁杆粉丝，但还是要承认">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS焦点图轮播">
-<meta property="og:url" content="http://yoursite.com/2016/10/06/底部导航按钮/index.html">
+<meta property="og:title" content="MyBlog">
+<meta property="og:url" content="http://yoursite.com/2017/02/28/why/index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="关于焦点图轮播的实现关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。">
-<meta property="og:updated_time" content="2016-12-29T20:14:52.995Z">
+<meta property="og:description" content="为什么像百度、淘宝之类大公司网页不使用响应式技术？而是独立写移动系统？
+有细心的朋友会发现，在手机上打开淘宝和百度的网站，发现地址前面都有个“m”，例如:m.taobao.com, m.baidu.com。要是响应式技术像你说的那么神，为什么这些大公司不直接使用响应式技术构建网站？这样不是更省钱么？
+要回答这个问题，就要先给出结论，响应式设计并不是万能的。虽然，我们是响应式的铁杆粉丝，但还是要承认">
+<meta property="og:updated_time" content="2017-05-03T14:32:34.026Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS焦点图轮播">
-<meta name="twitter:description" content="关于焦点图轮播的实现关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。">
+<meta name="twitter:title" content="MyBlog">
+<meta name="twitter:description" content="为什么像百度、淘宝之类大公司网页不使用响应式技术？而是独立写移动系统？
+有细心的朋友会发现，在手机上打开淘宝和百度的网站，发现地址前面都有个“m”，例如:m.taobao.com, m.baidu.com。要是响应式技术像你说的那么神，为什么这些大公司不直接使用响应式技术构建网站？这样不是更省钱么？
+要回答这个问题，就要先给出结论，响应式设计并不是万能的。虽然，我们是响应式的铁杆粉丝，但还是要承认">
 
 
 
@@ -121,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/06/底部导航按钮/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/28/why/"/>
 
 
 
 
 
-  <title> JS焦点图轮播 | MyBlog </title>
+  <title>  | MyBlog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -250,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/06/底部导航按钮/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/28/why/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="邱隆辉">
@@ -274,7 +280,7 @@
             
             
               
-                JS焦点图轮播
+                
               
             
           </h1>
@@ -289,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-06T23:16:03+08:00">
-                2016-10-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-28T20:36:09+08:00">
+                2017-02-28
               </time>
             
 
@@ -308,8 +314,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/10/06/底部导航按钮/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/06/底部导航按钮/" itemprop="commentCount"></span>
+                <a href="/2017/02/28/why/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/28/why/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -335,7 +341,13 @@
       
 
       
-        <h2 id="关于焦点图轮播的实现"><a href="#关于焦点图轮播的实现" class="headerlink" title="关于焦点图轮播的实现"></a>关于焦点图轮播的实现</h2><p>关于焦点图轮播网上实现的方法有很多，在这里用原生Js来实现的。<br><a id="more"></a><br>实现代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div></pre></td><td class="code"><pre><div class="line">	&lt;script&gt;</div><div class="line">	//箭头出现</div><div class="line">	var oplayDiv=document.getElementById(&quot;playimages&quot;);</div><div class="line">	var omarkL=oplayDiv.getElementsByClassName(&quot;mark_left&quot;)[0];</div><div class="line">	var omarkR=oplayDiv.getElementsByClassName(&quot;mark_right&quot;)[0];</div><div class="line">	var oprev=oplayDiv.getElementsByClassName(&quot;prev&quot;)[0];</div><div class="line">	var onext=oplayDiv.getElementsByClassName(&quot;next&quot;)[0];</div><div class="line">	var oSmallPicWrap=document.getElementsByClassName(&quot;small_picwrap&quot;)[0];</div><div class="line">	var oSmallPic=oSmallPicWrap.getElementsByClassName(&quot;small_pic&quot;)[0];</div><div class="line">	var aSmallLi=oSmallPic.getElementsByTagName(&quot;li&quot;);</div><div class="line">	var oBigUl=document.getElementsByClassName(&quot;big_pic&quot;)[0];</div><div class="line">	var aBigLi=oBigUl.getElementsByTagName(&quot;li&quot;);</div><div class="line">	var oBliWrap=document.getElementsByClassName(&quot;bli_wrap&quot;)[0];</div><div class="line">	var nowZindex=2;</div><div class="line">	var now=0;</div><div class="line">	//显示箭头</div><div class="line">	function displayFX(a,b)&#123;</div><div class="line">		a.onmouseover=b.onmouseover=function()&#123;</div><div class="line">			startMove(a,&#123;opacity:100&#125;)</div><div class="line">		&#125;</div><div class="line">		a.onmouseout=b.onmouseout=function()&#123;</div><div class="line">		startMove(a,&#123;opacity:0&#125;)</div><div class="line">		&#125;	</div><div class="line">	&#125;</div><div class="line">	displayFX(oprev,omarkL)</div><div class="line">	displayFX(onext,omarkR)</div><div class="line">	</div><div class="line">	//小图滚动</div><div class="line">	</div><div class="line">	oSmallPic.innerHTML+=oSmallPic.innerHTML</div><div class="line">	oSmallPic.style.width=aSmallLi[0].offsetWidth*aSmallLi.length+&quot;px&quot;;</div><div class="line">	var time1=setInterval(move,30);</div><div class="line">	function move()&#123;</div><div class="line">		if(oSmallPic.offsetLeft&lt;=-oSmallPic.offsetWidth/2)&#123;</div><div class="line">		oSmallPic.style.left=0;</div><div class="line">		&#125;</div><div class="line">		oSmallPic.style.left=oSmallPic.offsetLeft-2+&quot;px&quot;</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">	 oSmallPicWrap.onmouseover=function()&#123;</div><div class="line">		 clearInterval(time1)</div><div class="line">		 &#125;</div><div class="line">	 oSmallPicWrap.onmouseout=function()&#123;</div><div class="line">		time1=setInterval(move,30)</div><div class="line">		 &#125;		</div><div class="line">		</div><div class="line">	//大图切换</div><div class="line">	oBliWrap.innerHTML+=oBliWrap.innerHTML;</div><div class="line">	for(var i=0; i&lt;aSmallLi.length; i++)&#123;</div><div class="line">		aSmallLi[i].index=i;</div><div class="line">		 aSmallLi[i].onclick=function()&#123;</div><div class="line">			 aBigLi[this.index].style.zIndex=nowZindex++;</div><div class="line">			 if(this.index==now)&#123;</div><div class="line">				 return</div><div class="line">				 &#125;</div><div class="line">			 now=this.index//同一张图片只执行一次，除非切换过后；</div><div class="line">			 aBigLi[this.index].style.height=0;</div><div class="line">			 startMove(aBigLi[this.index],&#123;height:352&#125;)</div><div class="line">			 clearInterval(timer2);//点击小图后，自动下一张定时器清除。</div><div class="line">			 timer2=setInterval(next,6000)</div><div class="line">			 &#125;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">	//上一张与下一张</div><div class="line">	onext.onclick=function()&#123;</div><div class="line">		now++;</div><div class="line">		if(now&gt;aBigLi.length-1)&#123;</div><div class="line">			now=0;</div><div class="line">			&#125;</div><div class="line">		aBigLi[now].style.zIndex=nowZindex++;</div><div class="line">		aBigLi[now].style.height=0;</div><div class="line">		startMove(aBigLi[now],&#123;height:352&#125;)</div><div class="line">		clearInterval(timer2);//点击小图后，自动下一张定时器清除。</div><div class="line">		timer2=setInterval(next,6000)</div><div class="line">		&#125;	</div><div class="line">	oprev.onclick=function()&#123;</div><div class="line">		now--;</div><div class="line">		if(now&lt;0)&#123;</div><div class="line">			now=aBigLi.length-1;</div><div class="line">			&#125;</div><div class="line">		aBigLi[now].style.zIndex=nowZindex++;</div><div class="line">		aBigLi[now].style.height=0;</div><div class="line">		startMove(aBigLi[now],&#123;height:352&#125;)</div><div class="line">		clearInterval(timer2);//点击小图后，自动下一张定时器清除。</div><div class="line">		timer2=setInterval(next,6000)</div><div class="line">		&#125;</div><div class="line">	//自动下一张</div><div class="line">	function next()&#123;</div><div class="line">		now++;</div><div class="line">		if(now&gt;aBigLi.length-1)&#123;</div><div class="line">			now=0;</div><div class="line">			&#125;</div><div class="line">		aBigLi[now].style.zIndex=nowZindex++;</div><div class="line">		aBigLi[now].style.height=0;</div><div class="line">		startMove(aBigLi[now],&#123;height:352&#125;)</div><div class="line">		&#125;</div><div class="line">	var timer2=setInterval(next,6000)</div><div class="line">	</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+        <p>为什么像百度、淘宝之类大公司网页不使用响应式技术？而是独立写移动系统？</p>
+<p>有细心的朋友会发现，在手机上打开淘宝和百度的网站，发现地址前面都有个“m”，例如:m.taobao.com, m.baidu.com。要是响应式技术像你说的那么神，为什么这些大公司不直接使用响应式技术构建网站？这样不是更省钱么？</p>
+<p>要回答这个问题，就要先给出结论，响应式设计并不是万能的。虽然，我们是响应式的铁杆粉丝，但还是要承认这个事实。</p>
+<p>那么究竟响应式设计适合哪些场景？<br>正如我们经常看到的那样，很多中小型企业，个人博客，创业公司，开源项目，小型网店，艺术家，画家，音乐家，甚至是政府和学校，都使用响应式技术，来搭建他们的网站。这些页面的特点一般都是访问者和网站的交互很少，仅仅用于信息展示和获取以及点个赞什么的。需要写的兼容性代码很少，非常适合做成响应式。</p>
+<p>响应式设计不适合哪些场景呢？<br>而像淘宝，京东，还有其他的重交互性系统，则不大那么适合使用响应式技术。《响应式 Web 设计》一书中提到，响应式设计应该以移动用户的体验优先。在进行功能性设计的时候，需要优先考虑移动端的用户体验，然后才能考虑计算机端的用户体验。毕竟计算机的屏幕，比手机要大很多。产品经理往往要考虑，如何物尽其用并且堆砌更多的功能，所以响应式设计就不再是一个明智的选择。当然，这里有一个很重要的前提，您的技术团队，将需要维护两套代码，和两套基本不一致的系统。这对小型创业公司简直就是一个灾难。</p>
+<p>对于响应式设计技术理解的误区<br>有很多朋友还说，响应式设计，由于需要同时支持计算机和手机，所以代码的执行效率比较低。也有的朋友说，响应式技术制作的网站，将比普通网站需要加载更多的样式和脚本，所以打开速度比较慢。这么说的朋友，一般有两类人。一类人是，认为慢5%，也算慢的人；另外一类人是，听第一类人说慢，就认为慢了。起飞页作为国内使用响应式技术比较多的一家公司，专门的做过一些内部测试。在去掉了，响应式样式和脚本之后，页面的加载速度，确实提高了，但仅仅提高了3%到5%。相对于响应式带来的各种好处来说，这点性能上的开销，几乎可以忽略不计。</p>
+<p>要不要使用响应式？<br>对于初创企业，如果希望投入较小的时间和精力，就可以让自己的网站在手机以及平板电脑上被使用，响应式技术完全是最佳解决方案。如果您的企业成长到了一定的规模，并且希望，这手机上来点不一样的东西，那么专门的移动系统，也是一个不错的选择哦。顺便说一下，其实百度和阿里，腾讯，小米，知乎，很多大家都耳熟能详的公司，都在不同的产品中，使用非常多的响应式技术。可见，即使是财大气粗的大公司，也并不是都能支撑得住独立移动系统的开销。套用一句老话作为结束，作为产品经理，我们需要能够找到用户体验和构建成本的平衡点。</p>
 
       
     </div>
@@ -357,13 +369,21 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/记录/" rel="tag"># 记录</a>
+          
+            <a href="/tags/转载/" rel="tag"># 转载</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/28/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/02/16/劝学/" rel="next" title="劝学(节选)">
+                <i class="fa fa-chevron-left"></i> 劝学(节选)
               </a>
             
           </div>
@@ -371,10 +391,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/20/zou/" rel="prev" title="向前走，不要停">
-                向前走，不要停 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -400,8 +416,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/06/底部导航按钮/"
-           data-title="JS焦点图轮播" data-url="http://yoursite.com/2016/10/06/底部导航按钮/">
+      <div class="ds-thread" data-thread-key="2017/02/28/why/"
+           data-title="" data-url="http://yoursite.com/2017/02/28/why/">
       </div>
     
   </div>
@@ -425,17 +441,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/tx.jpg"
@@ -534,22 +541,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于焦点图轮播的实现"><span class="nav-number">1.</span> <span class="nav-text">关于焦点图轮播的实现</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
     </div>
