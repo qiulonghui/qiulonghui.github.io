@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="记录,转载,jQuery," />
 
 
 
@@ -84,22 +84,16 @@
 
 
 
-<meta name="description" content="JavaScript对每个创建的对象都会设置一个原型，指向它的原型对象。
-当我们用obj.xxx访问一个对象的属性时，JavaScript引擎先在当前对象上查找该属性，如果没有找到，就到其原型对象上找，如果还没有找到，就一直上溯到Object.prototype对象，最后，如果还没有找到，就只能返回undefined。">
+<meta name="description" content="本文实例讲述了jQuery操作iframe中js函数的方法。分享给大家供大家参考，具体如下：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="通过原型创建一个对象">
-<meta property="og:url" content="http://yoursite.com/2016/12/26/创建obj/index.html">
+<meta property="og:title" content="jQuery操作iframe中js函数的方法小结">
+<meta property="og:url" content="http://yoursite.com/2017/01/18/iframe/index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="JavaScript对每个创建的对象都会设置一个原型，指向它的原型对象。
-当我们用obj.xxx访问一个对象的属性时，JavaScript引擎先在当前对象上查找该属性，如果没有找到，就到其原型对象上找，如果还没有找到，就一直上溯到Object.prototype对象，最后，如果还没有找到，就只能返回undefined。">
-<meta property="og:image" content="http://p1.bqimg.com/4851/d6e5e01904c1e8b3.png">
-<meta property="og:image" content="http://p1.bqimg.com/4851/b59b40b28e14ce9b.png">
-<meta property="og:updated_time" content="2017-01-08T09:24:52.256Z">
+<meta property="og:description" content="本文实例讲述了jQuery操作iframe中js函数的方法。分享给大家供大家参考，具体如下：">
+<meta property="og:updated_time" content="2017-05-07T09:36:21.426Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="通过原型创建一个对象">
-<meta name="twitter:description" content="JavaScript对每个创建的对象都会设置一个原型，指向它的原型对象。
-当我们用obj.xxx访问一个对象的属性时，JavaScript引擎先在当前对象上查找该属性，如果没有找到，就到其原型对象上找，如果还没有找到，就一直上溯到Object.prototype对象，最后，如果还没有找到，就只能返回undefined。">
-<meta name="twitter:image" content="http://p1.bqimg.com/4851/d6e5e01904c1e8b3.png">
+<meta name="twitter:title" content="jQuery操作iframe中js函数的方法小结">
+<meta name="twitter:description" content="本文实例讲述了jQuery操作iframe中js函数的方法。分享给大家供大家参考，具体如下：">
 
 
 
@@ -127,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/12/26/创建obj/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/18/iframe/"/>
 
 
 
 
 
-  <title> 通过原型创建一个对象 | MyBlog </title>
+  <title> jQuery操作iframe中js函数的方法小结 | MyBlog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -256,7 +250,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/26/创建obj/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/18/iframe/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="邱隆辉">
@@ -280,7 +274,7 @@
             
             
               
-                通过原型创建一个对象
+                jQuery操作iframe中js函数的方法小结
               
             
           </h1>
@@ -295,8 +289,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-26T16:17:10+08:00">
-                2016-12-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-18T18:15:32+08:00">
+                2017-01-18
               </time>
             
 
@@ -314,8 +308,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/12/26/创建obj/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/26/创建obj/" itemprop="commentCount"></span>
+                <a href="/2017/01/18/iframe/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/18/iframe/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -341,35 +335,12 @@
       
 
       
-        <p>JavaScript对每个创建的对象都会设置一个原型，指向它的原型对象。</p>
-<p>当我们用obj.xxx访问一个对象的属性时，JavaScript引擎先在当前对象上查找该属性，如果没有找到，就到其原型对象上找，如果还没有找到，就一直上溯到Object.prototype对象，最后，如果还没有找到，就只能返回undefined。<br><a id="more"></a><br>例如，创建一个Array对象：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var arr = [1, 2, 3];</div></pre></td></tr></table></figure></p>
-<p>其原型链是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">arr ----&gt; Array.prototype ----&gt; Object.prototype ----&gt; null</div></pre></td></tr></table></figure></p>
-<p>Array.prototype定义了indexOf()、shift()等方法，因此你可以在所有的Array对象上直接调用这些方法。</p>
-<p>当我们创建一个函数时：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function foo() &#123;</div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>函数也是一个对象，它的原型链是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">foo ----&gt; Function.prototype ----&gt; Object.prototype ----&gt; null</div></pre></td></tr></table></figure></p>
-<p>由于Function.prototype定义了apply()等方法，因此，所有函数都可以调用apply()方法。</p>
-<p>很容易想到，如果原型链很长，那么访问一个对象的属性就会因为花更多的时间查找而变得更慢，因此要注意不要把原型链搞得太长。</p>
-<p>构造函数</p>
-<p>除了直接用<code>{ ... }</code>创建一个对象外，JavaScript还可以用一种构造函数的方法来创建对象。它的用法是，先定义一个构造函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function Student(name) &#123;</div><div class="line">    this.name = name;</div><div class="line">    this.hello = function () &#123;</div><div class="line">        alert(&apos;Hello, &apos; + this.name + &apos;!&apos;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>你会问，咦，这不是一个普通函数吗？</p>
-<p>这确实是一个普通函数，但是在JavaScript中，可以用关键字<code>new</code>来调用这个函数，并返回一个对象：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var xiaoming = new Student(&apos;小明&apos;);</div><div class="line">xiaoming.name; // &apos;小明&apos;</div><div class="line">xiaoming.hello(); // Hello, 小明!</div></pre></td></tr></table></figure></p>
-<p>注意，如果不写<code>new</code>，这就是一个普通函数，它返回<code>undefined</code>。但是，如果写了<code>new</code>，它就变成了一个构造函数，它绑定的this指向新创建的对象，并默认返回this，也就是说，不需要在最后写return this;。</p>
-<p>新创建的xiaoming的原型链是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoming ----&gt; Student.prototype ----&gt; Object.prototype ----&gt; null</div></pre></td></tr></table></figure></p>
-<p>也就是说，xiaoming的原型指向函数Student的原型。如果你又创建了xiaohong、xiaojun，那么这些对象的原型与xiaoming是一样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">xiaoming ↘</div><div class="line">xiaohong -→ Student.prototype ----&gt; Object.prototype ----&gt; null</div><div class="line">xiaojun  ↗</div></pre></td></tr></table></figure></p>
-<p>用new Student()创建的对象还从原型上获得了一个constructor属性，它指向函数Student本身：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">xiaoming.constructor === Student.prototype.constructor; // true</div><div class="line">Student.prototype.constructor === Student; // true</div><div class="line"></div><div class="line">Object.getPrototypeOf(xiaoming) === Student.prototype; // true</div><div class="line"></div><div class="line">xiaoming instanceof Student; // true</div></pre></td></tr></table></figure></p>
-<p>看晕了吧？用一张图来表示这些乱七八糟的关系就是：</p>
-<p><img src="http://p1.bqimg.com/4851/d6e5e01904c1e8b3.png" alt=""></p>
-<p>红色箭头是原型链。注意，Student.prototype指向的对象就是xiaoming、xiaohong的原型对象，这个原型对象自己还有个属性constructor，指向Student函数本身。</p>
-<p>另外，函数Student恰好有个属性prototype指向xiaoming、xiaohong的原型对象，但是xiaoming、xiaohong这些对象可没有prototype这个属性，不过可以用<strong>proto</strong>这个非标准用法来查看。</p>
-<p>现在我们就认为xiaoming、xiaohong这些对象“继承”自Student。</p>
-<p>不过还有一个小问题，注意观察：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">xiaoming.name; // &apos;小明&apos;</div><div class="line">xiaohong.name; // &apos;小红&apos;</div><div class="line">xiaoming.hello; // function: Student.hello()</div><div class="line">xiaohong.hello; // function: Student.hello()</div><div class="line">xiaoming.hello === xiaohong.hello; // false</div></pre></td></tr></table></figure></p>
-<p>xiaoming和xiaohong各自的name不同，这是对的，否则我们无法区分谁是谁了。</p>
-<p>xiaoming和xiaohong各自的hello是一个函数，但它们是两个不同的函数，虽然函数名称和代码都是相同的！</p>
-<p>如果我们通过new Student()创建了很多对象，这些对象的hello函数实际上只需要共享同一个函数就可以了，这样可以节省很多内存。</p>
-<p>要让创建的对象共享一个hello函数，根据对象的属性查找原则，我们只要把hello函数移动到xiaoming、xiaohong这些对象共同的原型上就可以了，也就是Student.prototype：</p>
-<p><img src="http://p1.bqimg.com/4851/b59b40b28e14ce9b.png" alt=""></p>
-<p>修改代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function Student(name) &#123;</div><div class="line">    this.name = name;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Student.prototype.hello = function () &#123;</div><div class="line">    alert(&apos;Hello, &apos; + this.name + &apos;!&apos;);</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<p>用new创建基于原型的JavaScript的对象就是这么简单！</p>
+        <p>本文实例讲述了jQuery操作iframe中js函数的方法。分享给大家供大家参考，具体如下：<br><a id="more"></a></p>
+<h3 id="1、jquery操作iframe中的元素（2种方式）"><a href="#1、jquery操作iframe中的元素（2种方式）" class="headerlink" title="1、jquery操作iframe中的元素（2种方式）"></a>1、jquery操作iframe中的元素（2种方式）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var tha = $(window.frames[&quot;core_content&quot;].document).find(&quot;#trewuuu&quot;).html();</div><div class="line">var thb = $(&quot;#core_content&quot;).contents().find(&quot;#trewuuu&quot;).html();</div></pre></td></tr></table></figure>
+<h3 id="2、操作父界面中的元素（header：为某个元素的id）"><a href="#2、操作父界面中的元素（header：为某个元素的id）" class="headerlink" title="2、操作父界面中的元素（header：为某个元素的id）"></a>2、操作父界面中的元素（header：为某个元素的id）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;#header&apos;, parent.document).text()</div></pre></td></tr></table></figure>
+<h3 id="3、js调用iframe中的js函数（2种）"><a href="#3、js调用iframe中的js函数（2种）" class="headerlink" title="3、js调用iframe中的js函数（2种）"></a>3、js调用iframe中的js函数（2种）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">window.frames[&quot;core_content&quot;].window.testIframe2(&quot;11&quot;);</div><div class="line">document.getElementById(&quot;core_content&quot;).contentWindow.testIframe2(&quot;11&quot;);</div></pre></td></tr></table></figure>
+<h3 id="4、jquery调用iframe的js函数（带参数的会有返回值）"><a href="#4、jquery调用iframe的js函数（带参数的会有返回值）" class="headerlink" title="4、jquery调用iframe的js函数（带参数的会有返回值）"></a>4、jquery调用iframe的js函数（带参数的会有返回值）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;#core_content&quot;)[0].contentWindow.testIframe2(&quot;11&quot;);</div></pre></td></tr></table></figure>
+<p>注意事项：<br>要和所包含的iframe在同一个域名（因为不能跨域）</p>
 
       
     </div>
@@ -393,7 +364,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+            <a href="/tags/记录/" rel="tag"># 记录</a>
+          
+            <a href="/tags/转载/" rel="tag"># 转载</a>
+          
+            <a href="/tags/jQuery/" rel="tag"># jQuery</a>
           
         </div>
       
@@ -402,8 +377,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/08/objact/" rel="next" title="JavaScript中的面向对象">
-                <i class="fa fa-chevron-left"></i> JavaScript中的面向对象
+              <a href="/2016/12/26/创建obj/" rel="next" title="通过原型创建一个对象">
+                <i class="fa fa-chevron-left"></i> 通过原型创建一个对象
               </a>
             
           </div>
@@ -412,8 +387,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/18/iframe/" rel="prev" title="jQuery操作iframe中js函数的方法小结">
-                jQuery操作iframe中js函数的方法小结 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/16/劝学/" rel="prev" title="劝学(节选)">
+                劝学(节选) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -440,8 +415,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/26/创建obj/"
-           data-title="通过原型创建一个对象" data-url="http://yoursite.com/2016/12/26/创建obj/">
+      <div class="ds-thread" data-thread-key="2017/01/18/iframe/"
+           data-title="jQuery操作iframe中js函数的方法小结" data-url="http://yoursite.com/2017/01/18/iframe/">
       </div>
     
   </div>
@@ -465,8 +440,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/tx.jpg"
@@ -565,6 +549,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、jquery操作iframe中的元素（2种方式）"><span class="nav-number">1.</span> <span class="nav-text">1、jquery操作iframe中的元素（2种方式）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、操作父界面中的元素（header：为某个元素的id）"><span class="nav-number">2.</span> <span class="nav-text">2、操作父界面中的元素（header：为某个元素的id）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、js调用iframe中的js函数（2种）"><span class="nav-number">3.</span> <span class="nav-text">3、js调用iframe中的js函数（2种）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、jquery调用iframe的js函数（带参数的会有返回值）"><span class="nav-number">4.</span> <span class="nav-text">4、jquery调用iframe的js函数（带参数的会有返回值）</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
