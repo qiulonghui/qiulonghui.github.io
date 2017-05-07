@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。123456789101112131415161718192021222324252627&amp;lt;script type=&amp;quot;text/j">
+<meta name="description" content="User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善 一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。123456789101112131415161718192021222324252627&amp;lt;script type=&amp;quot;text/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS判断移动设备的终端类型（浏览器UserAgent）">
 <meta property="og:url" content="http://yoursite.com/2017/03/15/2017-3-15-js判断设备类型/index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。123456789101112131415161718192021222324252627&amp;lt;script type=&amp;quot;text/j">
-<meta property="og:updated_time" content="2017-05-03T15:07:48.381Z">
+<meta property="og:description" content="User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善 一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。123456789101112131415161718192021222324252627&amp;lt;script type=&amp;quot;text/">
+<meta property="og:updated_time" content="2017-05-07T08:45:12.880Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS判断移动设备的终端类型（浏览器UserAgent）">
-<meta name="twitter:description" content="User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。123456789101112131415161718192021222324252627&amp;lt;script type=&amp;quot;text/j">
+<meta name="twitter:description" content="User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善 一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。123456789101112131415161718192021222324252627&amp;lt;script type=&amp;quot;text/">
 
 
 
@@ -335,7 +335,7 @@
       
 
       
-        <p>User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;  </div><div class="line">var browser = &#123;  </div><div class="line">    versions:function()&#123;   </div><div class="line">    var u = navigator.userAgent, app = navigator.appVersion;   </div><div class="line">    return &#123;//移动终端浏览器版本信息   </div><div class="line">        trident: u.indexOf(&quot;Trident&quot;) &gt; -1, //IE内核  </div><div class="line">        presto: u.indexOf(&quot;Presto&quot;) &gt; -1, //opera内核  </div><div class="line">        webKit: u.indexOf(&quot;AppleWebKit&quot;) &gt; -1, //苹果、谷歌内核  </div><div class="line">        gecko: u.indexOf(&quot;Gecko&quot;) &gt; -1 &amp;&amp; u.indexOf(&quot;KHTML&quot;) == -1, //火狐内核  </div><div class="line">        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端  </div><div class="line">        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  </div><div class="line">        android: u.indexOf(&quot;Android&quot;) &gt; -1 || u.indexOf(&quot;Linux&quot;) &gt; -1, //android终端或者uc浏览器  </div><div class="line">        iPhone: u.indexOf(&quot;iPhone&quot;) &gt; -1 , //是否为iPhone或者QQHD浏览器  </div><div class="line">        iPad: u.indexOf(&quot;iPad&quot;) &gt; -1, //是否iPad  </div><div class="line">        webApp: u.indexOf(&quot;Safari&quot;) == -1 //是否web应该程序，没有头部与底部  </div><div class="line">        &#125;;  </div><div class="line">    &#125;(),  </div><div class="line">    language:(navigator.browserLanguage || navigator.language).toLowerCase()  </div><div class="line">&#125;   </div><div class="line">document.writeln(&quot;语言版本: &quot;+browser.language);  </div><div class="line">document.writeln(&quot; 是否为移动终端: &quot;+browser.versions.mobile);  </div><div class="line">document.writeln(&quot; ios终端: &quot;+browser.versions.ios);  </div><div class="line">document.writeln(&quot; android终端: &quot;+browser.versions.android);  </div><div class="line">document.writeln(&quot; 是否为iPhone: &quot;+browser.versions.iPhone);  </div><div class="line">document.writeln(&quot; 是否iPad: &quot;+browser.versions.iPad);  </div><div class="line">document.writeln(navigator.userAgent);  </div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+        <p>User Agent的判断是识别浏览器的关键，不仅仅如此，移动互联网开发势头迅猛，通过User<br> Agent判断桌面端设备或移动设备就变的很为重要。当然，通过User Agent也可以用来改善<br> 一定的兼容性，比如判断得到用户用IE浏览器那么就是用不同的代码。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;  </div><div class="line">var browser = &#123;  </div><div class="line">    versions:function()&#123;   </div><div class="line">    var u = navigator.userAgent, app = navigator.appVersion;   </div><div class="line">    return &#123;//移动终端浏览器版本信息   </div><div class="line">        trident: u.indexOf(&quot;Trident&quot;) &gt; -1, //IE内核  </div><div class="line">        presto: u.indexOf(&quot;Presto&quot;) &gt; -1, //opera内核  </div><div class="line">        webKit: u.indexOf(&quot;AppleWebKit&quot;) &gt; -1, //苹果、谷歌内核  </div><div class="line">        gecko: u.indexOf(&quot;Gecko&quot;) &gt; -1 &amp;&amp; u.indexOf(&quot;KHTML&quot;) == -1, //火狐内核  </div><div class="line">        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端  </div><div class="line">        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  </div><div class="line">        android: u.indexOf(&quot;Android&quot;) &gt; -1 || u.indexOf(&quot;Linux&quot;) &gt; -1, //android终端或者uc浏览器  </div><div class="line">        iPhone: u.indexOf(&quot;iPhone&quot;) &gt; -1 , //是否为iPhone或者QQHD浏览器  </div><div class="line">        iPad: u.indexOf(&quot;iPad&quot;) &gt; -1, //是否iPad  </div><div class="line">        webApp: u.indexOf(&quot;Safari&quot;) == -1 //是否web应该程序，没有头部与底部  </div><div class="line">        &#125;;  </div><div class="line">    &#125;(),  </div><div class="line">    language:(navigator.browserLanguage || navigator.language).toLowerCase()  </div><div class="line">&#125;   </div><div class="line">document.writeln(&quot;语言版本: &quot;+browser.language);  </div><div class="line">document.writeln(&quot; 是否为移动终端: &quot;+browser.versions.mobile);  </div><div class="line">document.writeln(&quot; ios终端: &quot;+browser.versions.ios);  </div><div class="line">document.writeln(&quot; android终端: &quot;+browser.versions.android);  </div><div class="line">document.writeln(&quot; 是否为iPhone: &quot;+browser.versions.iPhone);  </div><div class="line">document.writeln(&quot; 是否iPad: &quot;+browser.versions.iPad);  </div><div class="line">document.writeln(navigator.userAgent);  </div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <p> JavaScript是前端开发的主要语言，我们可以通过编写JavaScript程序来判断浏览器的类型及版本。JavaScript判断浏览器类型一般有两种办法，一种是根据各种浏览器独有的属性来分辨，另一种是通过分析浏览器的userAgent属性来判断的。在许多情况下，值判断出浏览器类型之后，还需判断浏览器版本才能处理兼容性问题，而判断浏览器的版本一般只能通过分析浏览器的userAgent才能知道。</p>
 
@@ -381,6 +381,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/16/viewport/" rel="prev" title="移动前端开发之viewport的深入理解">
+                移动前端开发之viewport的深入理解 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -445,7 +449,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
